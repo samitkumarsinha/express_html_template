@@ -4,7 +4,7 @@ var port = process.env.PORT || 3000;
 var nmail = require('nodemailer');
 const SendmailTransport = require('nodemailer/lib/sendmail-transport');
 
-send_mail(res){
+function send_mail(res){
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
