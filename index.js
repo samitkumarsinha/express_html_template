@@ -1,7 +1,7 @@
 var http = require('http');
 // var dt = require('./datemodule');
 var port = process.env.PORT || 3000;
-var nmail = require('nodemailer');
+var nodemailer = require('nodemailer');
 const SendmailTransport = require('nodemailer/lib/sendmail-transport');
 
 function send_mail(res){
