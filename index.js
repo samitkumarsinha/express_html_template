@@ -1,7 +1,7 @@
 var http = require('http');
 var port = process.env.PORT || 3000;
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb+srv://:samdb@cluster0.idow2.mongodb.net/samnode";
+var url = "mongodb+srv://samdb:unicorn1@cluster0.idow2.mongodb.net/samnode";
 function getData(res){
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
