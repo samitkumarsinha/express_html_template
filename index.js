@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, '/views')))
 app.use(express.static(path.join(__dirname, '/images')))
 var port = process.env.PORT || 3000;
 var arr= [
-   {'name':'WHO'},{'name':'WHAT'},{'name':'WHERE'}
+   {'name':'WHO'},{'name':'WHAT'},{'name':'WHERE..'}
 ]
 
 app.get('/', function (req, res) {
