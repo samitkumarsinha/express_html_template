@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '/views')));
 app.use(express.static(path.join(__dirname, '/images')));
 var port = process.env.PORT || 3000;
 const mongoose = require("mongoose");
-var uri = 'mongodb+srv://samdb:unicorn1@cluster0.idow2.mongodb.net/school';
+var uri = 'mongodb+srv://samdb:u*****1@cluster0.idow2.mongodb.net/school';
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 var userschema = new mongoose.Schema({
    username: String,
